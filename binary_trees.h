@@ -67,4 +67,8 @@ heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 void binary_tree_print(const binary_tree_t *tree);
+bst_t *inorder_successor(bst_t *root);
+bst_t *bst_delete(bst_t *root, bst_t *node);
+bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
+bst_t *bst_remove(bst_t *root, int value);
 #endif /*binary_trees.h*/
